@@ -1,2 +1,2 @@
 # learn_pascal
-Sources ketika belajar Pascal
+Sources ketika belajar Pascal dengan Delphi7
