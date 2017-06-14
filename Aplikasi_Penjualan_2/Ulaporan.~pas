@@ -1,0 +1,41 @@
+unit Ulaporan;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Grids, DBGrids, Buttons;
+
+type
+  TFlaporan = class(TForm)
+    DBGrid1: TDBGrid;
+    DBGrid2: TDBGrid;
+    Label1: TLabel;
+    Label2: TLabel;
+    SpeedButton1: TSpeedButton;
+    procedure FormCreate(Sender: TObject);
+    procedure FormKeyPress(Sender: TObject; var Key: Char);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Flaporan: TFlaporan;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFlaporan.FormCreate(Sender: TObject);
+begin
+  keypreview:=true;
+end;
+
+procedure TFlaporan.FormKeyPress(Sender: TObject; var Key: Char);
+begin
+  if key=#27 then close;
+end;
+
+end.
